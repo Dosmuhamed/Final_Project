@@ -1,0 +1,67 @@
+.tour {
+    border: 2px solid rgba(139, 138, 138, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.tourAnimation {
+    animation-duration: 2s;
+    animation-name: tourAnimation;
+}
+@keyframes tourAnimation {
+    0% {
+        transform: translateX(100px);
+        opacity: 0.7;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+#tourOrder {
+    width: 70%;
+    height: 85vh;
+    background-color: white;
+    z-index: 11;
+    position: fixed;
+    top: 10vh;
+    left: 15%;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: none;
+}
+#tourOrderBg {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    display: none;
+}
+
+#LeaveFeedback {
+    width: 70%;
+    height: 85vh;
+    background-color: white;
+    z-index: 11;
+    position: fixed;
+    top: 10vh;
+    left: 15%;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: none;
+}
+#LeaveFeedbackBg {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    display: none;
+}
