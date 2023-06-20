@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>KZJOURNEY</title>
+		<title>Contact Us</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/bootstrap.css">
@@ -26,14 +26,13 @@
 					</nav>
 				</div>
 			</header>
-			<div class="fh5co-hero" style="background-image: url(images/hero_3.jpg);" data-stellar-background-ratio="0.5">
+			<div class="fh5co-hero" style="background-image: url(images/contactImg1.png);" data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
 							<div class="fh5co-intro fh5co-table-cell">
-								<h1 class="text-center">Contact us</h1>
-								<p>Made with love by the fine folks at <a href="http://freehtml5.co">FreeHTML5.co</a></p>
+								<h1 class="text-center">Contact <span class="txt-rotate" data-period="2000" data-rotate='[ "Anuar", "Dosmukhamed", "Alken"]'></span></h1>
 							</div>
 						</div>
 					</div>
@@ -43,11 +42,21 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-5">
-							<h2>Contact Info</h2>
-							<p>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains.</p>
-							<p>198 West 21th Street, Suite 721 <br> New York NY 10016</p>
-							<p><a href="#">sovetov.anuar47@gmail.com</a></p>
-							<p><a href="#">+123 456 7890</a></p>
+							<table>
+								<tr>
+									<td>
+										<h2>Contact Info</h2>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p>Thank you for your interest in contacting us at KazJourney. We value your feedback, inquiries, and the opportunity to assist you. There are several ways to get in touch with us, and we encourage you to choose the method that is most convenient for you.</p>
+									</td>
+								</tr>
+							</table>
+							<p>Esil Mangilik El Street, Suite C1 <br> Astana AST 00010</p>
+							<p><a href="#">dosmuhamed005@gmail.com</a></p>
+							<p><a href="#">+8-778-299-24-69</a></p>
 						</div>
 						<div class="col-md-6 col-md-push-1">
 							<form id="contact-form">
@@ -58,10 +67,18 @@
 									<input type="text" class="form-control" id="email" placeholder="Email">
 								</div>
 								<div class="form-group">
+									<select name="name" class="form-control" id="selectName">
+										<option value="">-- Choose operator --</option>
+										<option value="1">Anuar</option>
+										<option value="2">Dosmukhamed</option>
+										<option value="3">Alken</option>
+									</select>
+								</div>
+								<div class="form-group">
 									<textarea class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
 								</div>
 								<div class="form-group">
-									<input type="submit" value="Send Message" class="btn btn-primary btn-md">
+									<input type="submit" value="Send Message" class="btn btn-primary btn-md" onclick="onClickSubmit()">
 								</div>
 							</form>
 						</div>
@@ -74,31 +91,32 @@
 				<div class="row">
 					<div class="col-md-4">
 						<h3>About Us</h3>
-						<p>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains.</p>
+						<p>Collectively, our team at KazJourney is driven by a shared commitment to excellence, integrity, and customer satisfaction. We strive to go above and beyond to meet the unique needs and goals of our clients, ensuring their success and fostering long-term partnerships. </p>
 					</div>
 					<div class="col-md-3 col-md-push-1">
 						<h3>Quick Links</h3>
 						<ul>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Products</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="services.html#carousel-example-generic1">Products</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col-md-3 col-md-push-1">
 						<h3>Follow Us</h3>
 						<ul class="fh5co-social">
-							<li><a href="#"><i class="icon-twitter"></i> <span>Twitter</span></a></li>
-							<li><a href="#"><i class="icon-facebook"></i> <span>Facebook</span></a></li>
-							<li><a href="#"><i class="icon-instagram"></i> <span>Instagram</span></a></li>
-							<li><a href="#"><i class="icon-google"></i> <span>Google Plus</span></a></li>
+							<li><a href="https://twitter.com/TokayevKZ"><i class="icon-twitter"></i> <span>Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/TodayTokayev/"><i class="icon-facebook"></i> <span>Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/tokayev_life/"><i class="icon-instagram"></i> <span>Instagram</span></a></li>
 						</ul>
+					</div>
+					<div class="col-md-2">
+						<img src="images/icon.png" class="img-responsive">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12 fh5co-copyright text-center">
-						<p>Copyright © 2023  KazJourney. All rights reserved.</p>
+						<p><a href="documents/Terms.pdf">Copyright © 2023  KazJourney. All rights reserved.</a></p>
 					</div>
 				</div>
 			</div>
