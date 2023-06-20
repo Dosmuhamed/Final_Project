@@ -20,7 +20,7 @@
 }
 #tourOrder {
     width: 70%;
-    height: 85vh;
+    height: fit-content;
     background-color: white;
     z-index: 11;
     position: fixed;
@@ -29,6 +29,10 @@
     border-radius: 20px;
     border: 2px solid black;
     display: none;
+    max-height: 85vh;
+    overflow-y: auto;
+    animation-name: windowAnimation;
+    animation-duration: 2s;
 }
 #tourOrderBg {
     width: 100%;
@@ -53,6 +57,10 @@
     border-radius: 20px;
     border: 2px solid black;
     display: none;
+    max-height: 85vh;
+    overflow-y: auto;
+    animation-name: windowAnimation;
+    animation-duration: 2s;
 }
 #LeaveFeedbackBg {
     width: 100%;
@@ -64,4 +72,55 @@
     left: 0px;
     z-index: 10;
     display: none;
+}
+@keyframes windowAnimation {
+    0% {
+        transform: translateY(100px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+#tourOrder form {
+    margin: 30px;
+}
+#LeaveFeedback form {
+    margin: 30px;
+}
+.custom-number-input {
+    display: inline-flex;
+    align-items: center;
+}
+.custom-number-input button {
+    padding: 5px;
+    width: 30px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+.custom-number-input button:hover {
+    background-color: #e9e9e9;
+}
+.custom-number-input input[type="number"] {
+    max-width: 60px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.custom-number-input input[type="number"]::-webkit-inner-spin-button,
+.custom-number-input input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.windowClose {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
