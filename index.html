@@ -32,20 +32,30 @@
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
 							<div class="fh5co-intro fh5co-table-cell">
-								<h1 class="text-center">Start your trip to Kazakhstan</h1>
+								<h1 class="text-center">Start your trip to  
+									<span class="txt-rotate" data-period="2000" data-rotate='[ "beautiful", "perfect", "awesome", "pretty"]'></span> Kazakhstan</h1>
 								<p>Easy, convenient and affordable</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
 			<div class="fh5co-section">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-5">
-							<h2>Introduction</h2>
-							<p>Welcome to KazJourney, your ultimate guide to exploring the magnificent wonders of Kazakhstan. Nestled in the heart of Central Asia, Kazakhstan is a breathtaking country that beckons adventurers, nature lovers, and culture enthusiasts alike.</p>
+							<table>
+								<tr>
+									<td>
+										<h2>Introduction</h2>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<p>Welcome to KazJourney, your ultimate guide to exploring the magnificent wonders of Kazakhstan. Nestled in the heart of Central Asia, Kazakhstan is a breathtaking country that beckons adventurers, nature lovers, and culture enthusiasts alike.</p>
+									</td>
+								</tr>
+							</table>
 						</div>
 						<div class="col-md-7">
 							<img src="images/logo.png" alt="Free HTML5 by FreeHTML5.co" class="img-responsive">
@@ -70,8 +80,8 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-								<div class="fh5co-icon">
-									<i class="icon-strategy"></i>
+								<div class="fh5co-icon iconButton">
+									<i class="icon-strategy" onmouseover="onMouseOverIconButton(this)" onmouseleave="onMouseLeaveIconButton(this)" onkeypress="onKeyPressIconButton(this)"></i>
 								</div>
 								<div class="fh5co-text">
 									<h3>Strategy</h3>
@@ -81,8 +91,8 @@
 						</div>
 						<div class="col-md-6">
 							<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-								<div class="fh5co-icon">
-									<i class="icon-telescope"></i>
+								<div class="fh5co-icon iconButton">
+									<i class="icon-telescope" onmouseover="onMouseOverIconButton(this)" onmouseleave="onMouseLeaveIconButton(this)" onkeypress="onKeyPressIconButton(this)"></i>
 								</div>
 								<div class="fh5co-text">
 									<h3>Explore</h3>
@@ -92,8 +102,8 @@
 						</div>
 						<div class="col-md-6">
 							<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-								<div class="fh5co-icon">
-									<i class="icon-circle-compass"></i>
+								<div class="fh5co-icon iconButton">
+									<i class="icon-circle-compass"  onmouseover="onMouseOverIconButton(this)" onmouseleave="onMouseLeaveIconButton(this)" onkeypress="onKeyPressIconButton(this)"></i>
 								</div>
 								<div class="fh5co-text">
 									<h3>Direction</h3>
@@ -103,8 +113,8 @@
 						</div>
 						<div class="col-md-6">
 							<div class="fh5co-feature animate-box" data-animate-effect="fadeInLeft">
-								<div class="fh5co-icon">
-									<i class="icon-tools"></i>
+								<div class="fh5co-icon iconButton">
+									<i class="icon-tools"  onmouseover="onMouseOverIconButton(this)" onmouseleave="onMouseLeaveIconButton(this)" onkeypress="onKeyPressIconButton(this)"s></i>
 								</div>
 								<div class="fh5co-text">
 									<h3>Progress</h3>
@@ -144,6 +154,9 @@
 							<p>Let the magic of this extraordinary country inspire your wanderlust and create memories that will last a lifetime.</p>
 						</div>
 					</div>
+					<div class="row">
+						<button class="glow-on-hover" type="button" onclick="onClickStartTrip()" id="startTrip">Start your trip</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -152,31 +165,32 @@
 				<div class="row">
 					<div class="col-md-4">
 						<h3>About Us</h3>
-						<p>She packed her seven versalia put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains.</p>
+						<p>Collectively, our team at KazJourney is driven by a shared commitment to excellence, integrity, and customer satisfaction. We strive to go above and beyond to meet the unique needs and goals of our clients, ensuring their success and fostering long-term partnerships. </p>
 					</div>
 					<div class="col-md-3 col-md-push-1">
 						<h3>Quick Links</h3>
 						<ul>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Products</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Contact</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="services.html#carousel-example-generic1">Products</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="contact.html">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col-md-3 col-md-push-1">
 						<h3>Follow Us</h3>
 						<ul class="fh5co-social">
-							<li><a href="#"><i class="icon-twitter"></i> <span>Twitter</span></a></li>
-							<li><a href="#"><i class="icon-facebook"></i> <span>Facebook</span></a></li>
-							<li><a href="#"><i class="icon-instagram"></i> <span>Instagram</span></a></li>
-							<li><a href="#"><i class="icon-google"></i> <span>Google Plus</span></a></li>
+							<li><a href="https://twitter.com/TokayevKZ"><i class="icon-twitter"></i> <span>Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/TodayTokayev/"><i class="icon-facebook"></i> <span>Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/tokayev_life/"><i class="icon-instagram"></i> <span>Instagram</span></a></li>
 						</ul>
+					</div>
+					<div class="col-md-2">
+						<img src="images/icon.png" class="img-responsive">
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12 fh5co-copyright text-center">
-						<p>Copyright © 2023  KazJourney. All rights reserved.</p>
+						<p><a href="documents/Terms.pdf">Copyright © 2023  KazJourney. All rights reserved.</a></p>
 					</div>
 				</div>
 			</div>
@@ -187,3 +201,4 @@
 		<script src="js/indexScript.js"></script>
 	</body>
 </html>
+
