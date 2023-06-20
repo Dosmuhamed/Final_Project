@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Simple &mdash; Free HTML5 Bootstrap Website Template</title>
+		<title>Services</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/bootstrap.css">
@@ -32,7 +32,7 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
 						<div class="fh5co-intro fh5co-table-cell">
-							<h1 class="text-center">Our services</h1>
+							<h1 class="text-center">Our <span class="txt-rotate" data-period="2000" data-rotate='[ "services", "functions", "jobs", "works"]'></span></h1>
 						</div>
 					</div>
 				</div>
@@ -42,8 +42,18 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5">
-						<h2>Main Functions</h2>
-						<p>For your good rest, we take care of all the main tasks. To have a good rest, you just need to buy our tour, which includes:</p>
+						<table>
+							<tr>
+								<td>
+									<h2>Main Functions</h2>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<p>For your good rest, we take care of all the main tasks. To have a good rest, you just need to buy our tour, which includes:</p>
+								</td>
+							</tr>
+						</table>
 						<ul class="fh5co-check">
 							<li>Buying tickets (round trip)</li>
 							<li>Trip Planning and Customization</li>
@@ -291,17 +301,78 @@
 		</div>
 	</div>
 	<div id="tourOrderBg">
-
+		
 	</div>
 	<div id="tourOrder">
-	
+		<form method="post">
+				<legend>Order tour</legend>
+				<div class="form-group">
+					<label for="name">Name</label>
+					<input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+				  </div>
+				  <div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+				  </div>
+				  <div class="form-group">
+					<label for="phone">Phone</label>
+					<input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+				  </div>
+				  <div class="form-group">
+					<label for="tour">Select Tour</label>
+					<select class="form-control" id="tour" name="tour" required>
+					  <option value="">Choose a tour</option>
+					  <option value="tour1">Almaty</option>
+					  <option value="tour2">Zailiyskoye Alatau</option>
+					  <option value="tour3">Peak Khan-Tengri</option>
+					  <option value="tour4">Kolsai lakes</option>
+					  <option value="tour5">Aktau</option>
+					  <option value="tour6">Lake Balhash</option>
+					  <option value="tour7">Lake Kaindy</option>
+					</select>
+				  </div>
+				  <div class="form-group">
+					  <label for="tickets">Select number of tickets:</label>
+					  <div class="custom-number-input">
+						  <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" type="button">-</button>
+						  <input type="number" name="tickets" min="1" max="10" value="1">
+						  <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" type="button">+</button>
+					  </div>
+				  </div>
+				  <div class="form-group">
+					<label for="message">Additional Message</label>
+					<textarea class="form-control" id="message" name="message" placeholder="Enter any additional information"></textarea>
+				  </div>
+				  <button type="submit" class="btn btn-primary" onclick="validateOrderTour()">Submit</button>
+				  <button type="button" class="btn btn-secondary" onclick="closeOrderTour()">close</button>
+		</form>
 	</div>
 
 	<div id="LeaveFeedbackBg">
-
+		
 	</div>
 	<div id="LeaveFeedback">
-	
+		<form method="post" id="feedbackForm">
+			<legend>Leave Feedback</legend>
+			<div class="form-group">
+			  <label for="name">Name:</label>
+			  <input type="text" class="form-control" id="name2" name="name" placeholder="Enter your name" required>
+			</div>
+			<div class="form-group">
+			  <label for="email">Email:</label>
+			  <input type="email" class="form-control" id="email2" name="email" placeholder="Enter your email" required>
+			</div>
+			<div class="form-group">
+			  <label for="subject">Subject:</label>
+			  <input type="text" class="form-control" id="subject2" name="subject" placeholder="Enter the subject" required>
+			</div>
+			<div class="form-group">
+			  <label for="message">Message:</label>
+			  <textarea class="form-control" id="message2" name="message" placeholder="Enter your message" required></textarea>
+			</div>
+			<button type="submit" class="btn btn-primary" onclick="validateLeaveFeedback()">Submit</button>
+				  <button type="button" class="btn btn-secondary" onclick="closeLeaveFeedback()">close</button>
+		  </form>
 	</div>
 
 
@@ -310,33 +381,35 @@
 			<div class="row">
 				<div class="col-md-4">
 					<h3>About Us</h3>
-					<p>She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains.</p>
+					<p>Collectively, our team at KazJourney is driven by a shared commitment to excellence, integrity, and customer satisfaction. We strive to go above and beyond to meet the unique needs and goals of our clients, ensuring their success and fostering long-term partnerships. </p>
 				</div>
 				<div class="col-md-3 col-md-push-1">
 					<h3>Quick Links</h3>
 					<ul>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Products</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="services.html#carousel-example-generic1">Products</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="contact.html">Contact</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 col-md-push-1">
 					<h3>Follow Us</h3>
 					<ul class="fh5co-social">
-						<li><a href="#"><i class="icon-twitter"></i> <span>Twitter</span></a></li>
-						<li><a href="#"><i class="icon-facebook"></i> <span>Facebook</span></a></li>
-						<li><a href="#"><i class="icon-instagram"></i> <span>Instagram</span></a></li>
-						<li><a href="#"><i class="icon-google"></i> <span>Google Plus</span></a></li>
+						<li><a href="https://twitter.com/TokayevKZ"><i class="icon-twitter"></i> <span>Twitter</span></a></li>
+						<li><a href="https://www.facebook.com/TodayTokayev/"><i class="icon-facebook"></i> <span>Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/tokayev_life/"><i class="icon-instagram"></i> <span>Instagram</span></a></li>
 					</ul>
+				</div>
+				<div class="col-md-2">
+					<img src="images/icon.png" class="img-responsive">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12 fh5co-copyright text-center">
-					<p>Copyright © 2023  KazJourney. All rights reserved.</p>
+					<p><a href="documents/Terms.pdf">Copyright © 2023  KazJourney. All rights reserved.</a></p>
 				</div>
 			</div>
+			
 		</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
